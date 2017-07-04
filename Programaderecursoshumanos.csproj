@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98450C10-1C15-481F-B68B-47EBCDD15FF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Programaderecursoshumanos</RootNamespace>
+    <AssemblyName>Programaderecursoshumanos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conexion.cs" />
+    <Compile Include="datosempleadosbdDataSet.cs">
+      <DependentUpon>datosempleadosbdDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="datosempleadosbdDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datosempleadosbdDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Despidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Despidos.Designer.cs">
+      <DependentUpon>Despidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmacercade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmacercade.Designer.cs">
+      <DependentUpon>frmacercade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmagregarempleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmagregarempleado.Designer.cs">
+      <DependentUpon>frmagregarempleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmayudaenlinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmayudaenlinea.Designer.cs">
+      <DependentUpon>frmayudaenlinea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcalculadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcalculadora.Designer.cs">
+      <DependentUpon>frmcalculadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcalendario.Designer.cs">
+      <DependentUpon>frmcalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcambiodepuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcambiodepuesto.Designer.cs">
+      <DependentUpon>frmcambiodepuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmestadodelempleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmestadodelempleado.Designer.cs">
+      <DependentUpon>frmestadodelempleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frminicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frminicio.Designer.cs">
+      <DependentUpon>Frminicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmjuvilaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmjuvilaciones.Designer.cs">
+      <DependentUpon>frmjuvilaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlicenciamedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlicenciamedica.Designer.cs">
+      <DependentUpon>frmlicenciamedica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlistadodelpersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlistadodelpersonal.Designer.cs">
+      <DependentUpon>frmlistadodelpersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmloa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmloa.Designer.cs">
+      <DependentUpon>Frmloa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmlogin.Designer.cs">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmmenuprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmmenuprincipal.Designer.cs">
+      <DependentUpon>Frmmenuprincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmodificaryeliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmodificaryeliminar.Designer.cs">
+      <DependentUpon>frmmodificaryeliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmnavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnavegador.Designer.cs">
+      <DependentUpon>frmnavegador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmregistar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmregistar.Designer.cs">
+      <DependentUpon>Frmregistar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmrenuncia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrenuncia.Designer.cs">
+      <DependentUpon>frmrenuncia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmvacaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmvacaciones.Designer.cs">
+      <DependentUpon>frmvacaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Despidos.resx">
+      <DependentUpon>Despidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmacercade.resx">
+      <DependentUpon>frmacercade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmagregarempleado.resx">
+      <DependentUpon>frmagregarempleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmayudaenlinea.resx">
+      <DependentUpon>frmayudaenlinea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcalculadora.resx">
+      <DependentUpon>frmcalculadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcalendario.resx">
+      <DependentUpon>frmcalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcambiodepuesto.resx">
+      <DependentUpon>frmcambiodepuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmestadodelempleado.resx">
+      <DependentUpon>frmestadodelempleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frminicio.resx">
+      <DependentUpon>Frminicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmjuvilaciones.resx">
+      <DependentUpon>frmjuvilaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlicenciamedica.resx">
+      <DependentUpon>frmlicenciamedica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlistadodelpersonal.resx">
+      <DependentUpon>frmlistadodelpersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmloa.resx">
+      <DependentUpon>Frmloa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmlogin.resx">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmmenuprincipal.resx">
+      <DependentUpon>Frmmenuprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmodificaryeliminar.resx">
+      <DependentUpon>frmmodificaryeliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnavegador.resx">
+      <DependentUpon>frmnavegador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmregistar.resx">
+      <DependentUpon>Frmregistar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrenuncia.resx">
+      <DependentUpon>frmrenuncia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmvacaciones.resx">
+      <DependentUpon>frmvacaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="datosempleadosbdDataSet.xsc">
+      <DependentUpon>datosempleadosbdDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="datosempleadosbdDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datosempleadosbdDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="datosempleadosbdDataSet.xss">
+      <DependentUpon>datosempleadosbdDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
